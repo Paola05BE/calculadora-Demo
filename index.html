@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simple</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <h1 class="titulo">Calculadora Simple</h1>
+    <input type="text" id="vista"oninput="showNumbers()" class="vista">
+    <section class="operaciones"> 
+        <seption class="fila1">
+        <button onclick="clearDisplay()" class="eliminarTodo"> A C</button>
+        <button onclick="deleteDigit()" class="eliminarNumero">x</button>
+        <button onclick="setOperation('%')" class="porcentaje">%</button>
+        <button onclick="setOperation('/')" class="dividir">/</button>
+        </seption>
+        <seption class="fila2">
+            <button onclick="appendNumber(7)"class="ciete"> 7</button>
+            <button onclick="appendNumber(8)" class="ocho">8</button>
+            <button onclick="appendNumber(9)"class="nueve">9</button>
+            <button onclick="setOperation('*')"class="multiplicar">*</button>
+        </seption>
+        <seption class="fila3">
+            <button onclick="appendNumber(4)" class="cuatro"> 4</button>
+            <button onclick="appendNumber(5)" class="cinco">5</button>
+            <button onclick="appendNumber(6)"class="seis">6</button>
+            <button onclick="setOperation('-')" class="menos">-</button>
+        </seption>
+        <seption class="fila4">
+            <button onclick="appendNumber(1)" class="ciete"> 1</button>
+            <button onclick="appendNumber(2)" class="ocho">2</button>
+            <button onclick="appendNumber(3)"class="nueve">3</button>
+            <button onclick="setOperation('+')" class="mas">+</button>
+        </seption>
+
+        <seption class="fila5">
+            <button onclick="appendNumber(0)" class="cero"> 0</button>
+            <button onclick="calculate()" class="igual">=</button>
+        </seption>
+    </section>
+<footer>&copy; Paola B - 2024.</footer> 
+<script src="app.js"></script> 
+</body>
+</html>
